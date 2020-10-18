@@ -23,7 +23,7 @@ export class TodoItemComponent implements OnInit {
     return classes;
   }
 
-  onToggle() {
+  onToggle(todo) {
     //UI toggle
     this.todo.completed = !this.todo.completed;
     //server toggle
@@ -32,7 +32,7 @@ export class TodoItemComponent implements OnInit {
       .subscribe((todo) => console.log(todo));
   }
 
-  onDelete() {
+  onDelete(todo) {
     this.deleteTodo.emit(this.todo);
   }
 }
