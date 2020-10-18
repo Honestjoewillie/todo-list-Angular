@@ -5,7 +5,30 @@
   padding: 10px;
 }
 
-.header a {
-  color: #fff;
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+}
+nav a {
+  color: black;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
   text-decoration: none;
+}
+
+nav a:visited,
+a:link {
+  color: grey;
+}
+
+nav a:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+}
+
+nav a.active {
+  color: #039be5;
 }
